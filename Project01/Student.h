@@ -16,19 +16,19 @@ public:
 		mark = 4;
 	}
 
-	Student(string nm) {
-		//cout << "constructor with arguments was calling" << endl;
-		name = nm;
-	}
+	//Student(string nm) {
+	//	//cout << "constructor with arguments was calling" << endl;
+	//	name = nm;
+	//}
 
-	Student(string nm, int a) {
-		//cout << "constructor with arguments was calling" << endl;
-		name = nm;
-		age = a;
-	}
+	//Student(string nm, int a) {
+	//	//cout << "constructor with arguments was calling" << endl;
+	//	name = nm;
+	//	age = a;
+	//}
 
 	// canonical constructor (канонический конструктор)
-	Student(string nm, int a, double m) {
+	Student(string nm, int a = 14, double m = 4) {
 		//cout << "canonical constructor with arguments was calling" << endl;
 		name = nm;
 		age = a;
