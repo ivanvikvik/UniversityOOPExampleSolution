@@ -29,7 +29,7 @@ public:
 
 	// canonical constructor (канонический конструктор)
 	Student(string nm, int a = 14, double m = 4) {
-		//cout << "canonical constructor with arguments was calling" << endl;
+		cout << "canonical constructor with arguments was calling" << endl;
 		name = nm;
 		age = a;
 		mark = m;
@@ -39,6 +39,12 @@ public:
 	//Student(const Student& student) {
 
 	//}
+
+	// destructor
+	~Student() {
+		cout << "destructor was calling" << endl;
+		// ...
+	}
 
 	string convert() {
 		string s = "";
