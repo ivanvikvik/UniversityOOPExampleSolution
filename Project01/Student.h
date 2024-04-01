@@ -16,6 +16,30 @@ public:
 		mark = 4;
 	}
 
+	Student(string nm) {
+		//cout << "constructor with arguments was calling" << endl;
+		name = nm;
+	}
+
+	Student(string nm, int a) {
+		//cout << "constructor with arguments was calling" << endl;
+		name = nm;
+		age = a;
+	}
+
+	// canonical constructor (канонический конструктор)
+	Student(string nm, int a, double m) {
+		//cout << "canonical constructor with arguments was calling" << endl;
+		name = nm;
+		age = a;
+		mark = m;
+	}
+
+	//// copy-constructor (конструктор копирования)
+	//Student(const Student& student) {
+
+	//}
+
 	string convert() {
 		string s = "";
 		s += name;
