@@ -32,7 +32,6 @@ public:
 		cout << "canonical constructor with arguments was calling" << endl;
 		name = nm;
 		age = a;
-		mark = m;
 	}
 
 	//// copy-constructor (конструктор копирования)

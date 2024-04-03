@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Student.h"
+#include "Manager.h"
 
 int main() {
 	//const int size = 10;
