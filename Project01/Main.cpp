@@ -2,28 +2,27 @@
 #include "Manager.h"
 
 int main() {
-	//const int size = 10;
-	//int vector[size]{};
+	Student st1{ "Alex", 14, 9 };
+	Student st2{ "Alice", 13, 7 };
+	Student st3{ "Roma", 15, 10 };
+	Student st4{ "Matvey", 14, 8 };
+	Student st5{ "Alexey", 14, 6 };
 
-	//for (int i = 0; i < size; i++)
-	//{
-	//	cout << vector[i] << " ";
-	//}
+	const int size = 5;
+	Student students[]{ st1, st2, st3, st4, st5 };
 
-	/*Student st1 = Student("Alex");
-		Student st2 = Student("Potter", 14);
-	Student st3 = Student("Alice", 15, 10);
-	Student st4 = Student(); */
+	Manager manager;
 
-	Student st1{};
-	Student st2{ "Alex" };
-	Student st3{ "Alex", 14 };
-	Student st4{ "Alex", 14, 10 };
+	cout << "Best mark is " << manager.getMaxMark(students, size) << endl;
+	cout << "Worst mark is " << manager.getMinMark(students, size) << endl;
+	
+	Student best = manager.getBestStudent(students, size);
+	cout << "First best student is " << best.convert() << endl;
 
-	cout << st1.convert() << endl;
-	cout << st2.convert() << endl;
-	cout << st3.convert() << endl;
-	cout << st4.convert() << endl;
+	Student worst = manager.getWorstStudent(students, size);
+	cout << "First worst student is " << worst.convert() << endl;
+
+	cout << "Average mark of students is " << manager.calcAvgMark(students, size) << endl;
 
 	return 0;
 }

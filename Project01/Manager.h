@@ -32,7 +32,7 @@ public:
 	double calcAvgMark(Student* list, int length) {
 		double avg = 0;
 
-		for (int i = 1; i < length; i++)
+		for (int i = 0; i < length; i++)
 		{
 			avg += list[i].mark;			
 		}
@@ -42,7 +42,7 @@ public:
 
 	Student getBestStudent(Student* list, int length) {
 		double mark = getMaxMark(list, length);
-		Student st = NULL;
+		Student st;
 
 		for (int i = 0; i < length; i++)
 		{
@@ -57,7 +57,7 @@ public:
 
 	Student getWorstStudent(Student* list, int length) {
 		double mark = getMinMark(list, length);
-		Student st = NULL;
+		Student st;
 
 		for (int i = 0; i < length; i++)
 		{

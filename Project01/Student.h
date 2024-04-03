@@ -10,7 +10,7 @@ public:
 
 	// default constructor (конструктор по умолчанию)
 	Student() {
-		cout << "default constructor was calling" << endl;
+		//cout << "default constructor was calling" << endl;
 		name = "no name";
 		age = 6;
 		mark = 4;
@@ -29,9 +29,10 @@ public:
 
 	// canonical constructor (канонический конструктор)
 	Student(string nm, int a = 14, double m = 4) {
-		cout << "canonical constructor with arguments was calling" << endl;
+		//cout << "canonical constructor with arguments was calling" << endl;
 		name = nm;
 		age = a;
+		mark = m;
 	}
 
 	//// copy-constructor (конструктор копирования)
@@ -41,7 +42,7 @@ public:
 
 	// destructor
 	~Student() {
-		cout << "destructor was calling" << endl;
+		//cout << "destructor was calling" << endl;
 		// ...
 	}
 
