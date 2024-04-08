@@ -4,12 +4,12 @@
 class Manager {
 public:
 	double getMaxMark(Student* list, int length) {
-		double max = list[0].mark;
+		double max = list[0].getMark();
 
 		for (int i = 1; i < length; i++)
 		{
-			if (list[i].mark > max) {
-				max = list[i].mark;
+			if (list[i].getMark() > max) {
+				max = list[i].getMark();
 			}
 		}
 
@@ -17,12 +17,12 @@ public:
 	}
 
 	double getMinMark(Student* list, int length) {
-		double min = list[0].mark;
+		double min = list[0].getMark();
 
 		for (int i = 1; i < length; i++)
 		{
-			if (list[i].mark < min) {
-				min = list[i].mark;
+			if (list[i].getMark() < min) {
+				min = list[i].getMark();
 			}
 		}
 
@@ -34,7 +34,7 @@ public:
 
 		for (int i = 0; i < length; i++)
 		{
-			avg += list[i].mark;			
+			avg += list[i].getMark();
 		}
 
 		return avg / length;
@@ -46,7 +46,7 @@ public:
 
 		for (int i = 0; i < length; i++)
 		{
-			if (list[i].mark == mark) {
+			if (list[i].getMark() == mark) {
 				st = list[i];
 				break;
 			}
@@ -61,7 +61,7 @@ public:
 
 		for (int i = 0; i < length; i++)
 		{
-			if (list[i].mark == mark) {
+			if (list[i].getMark() == mark) {
 				st = list[i];
 				break;
 			}
