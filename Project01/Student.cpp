@@ -21,10 +21,10 @@ Student::Student() {
 //}
 
 // canonical constructor (канонический конструктор)
-Student::Student(string nm, int a = 14, double m = 4) {
+Student::Student(string nm, int age = 14, double m = 4) {
 	//cout << "canonical constructor with arguments was calling" << endl;
 	name = nm;
-	age = a;
+	age = age;
 	mark = m;
 }
 
