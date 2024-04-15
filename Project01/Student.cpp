@@ -2,11 +2,11 @@
 
 
 // default constructor (конструктор по умолчанию)
-Student::Student() {
+Student::Student() : Student("no_name", 6, 4) {
 	//cout << "default constructor was calling" << endl;
-	name = "no name";
+	/*name = "no name";
 	age = 6;
-	mark = 4;
+	mark = 4;*/
 }
 
 //Student(string nm) {
@@ -14,18 +14,16 @@ Student::Student() {
 //	name = nm;
 //}
 
-//Student(string nm, int a) {
+//Student(string name, int age) {
 //	//cout << "constructor with arguments was calling" << endl;
-//	name = nm;
-//	age = a;
+//	this->name = name;
+//	this->age = age;
 //}
 
 // canonical constructor (канонический конструктор)
-Student::Student(string name, int age = 14, double mark = 4) {
-	//cout << "canonical constructor with arguments was calling" << endl;
-	this->name = name;
-	this->age = age;
-	this->mark = mark;
+Student::Student(string name, int age, double mark) 
+	: name(name), age(age), mark(mark) {
+	//cout << "canonical constructor with arguments was calling" << endl;	
 }
 
 //// copy-constructor (конструктор копирования)
