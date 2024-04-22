@@ -17,7 +17,7 @@ Student::Student() : Student("no_name", 6, 4) {
 	mark = 4;*/
 }
 
-Student::Student(string name) : name(name) {
+Student::Student(string name) : name(name), age(6), mark(4) {
 	//cout << "constructor with arguments was calling" << endl;
 	count++;
 }
@@ -42,7 +42,7 @@ Student::Student(string name, int age, double mark)
 
 // destructor
 Student::~Student() {
-	cout << "destructor was calling" << endl;
+	//cout << "destructor was calling" << endl;
 	count--;
 }
 
