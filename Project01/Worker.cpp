@@ -12,8 +12,8 @@ void Worker::setSalary(double salary) {
 
 string Worker::getInfo() {
 	string s = "";
-	s += getName() + ": age = ";
-	s += to_string(getAge());
+	s += name + ": age = ";
+	s += to_string(age);
 	s += ", salary = ";
 	s += to_string(salary);
 
