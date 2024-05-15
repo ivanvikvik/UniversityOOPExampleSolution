@@ -36,4 +36,12 @@ public:
 	static int getCount();
 
 	string convert();
+
+	Student operator+(int number) {
+		if (mark + number > 10 || mark + number < 0) {
+			return *this;
+		}
+
+		return Student(name, age, mark + number);
+	}
 };

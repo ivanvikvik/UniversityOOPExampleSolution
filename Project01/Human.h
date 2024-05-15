@@ -11,11 +11,15 @@ protected:
 
 public:
 	Human() {
-		cout << "Human default constructor" << endl;
+		//cout << "Human default constructor" << endl;
 	}
 
 	Human(string name, int age) :
 		name(name), age(age) {}
+
+	Human(const Human& human) {
+		cout << "copy-constructor" << endl;
+	}
 
 	~Human() {
 		cout << "Human destructor" << endl;
