@@ -1,13 +1,22 @@
 #include "Figure.h"
 
-//double Figure::perimeter() {
-//	return 0;
-//}
-//
-//double Figure::square() {
-//	return 0;
-//}
-//
-//string Figure::draw() {
-//	return "";
-//}
+int Figure::getX() {
+	return x;
+}
+
+int Figure::getY() {
+	return y;
+}
+
+void Figure::setX(int x) {
+	this->x = x;
+}
+
+void Figure::setY(int y) {
+	this->y = y;
+}
+
+string Figure::draw() {
+	return "start point - x = "
+		+ to_string(x) + ", y = " + to_string(y);
+}
