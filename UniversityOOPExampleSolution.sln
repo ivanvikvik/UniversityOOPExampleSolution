@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TransportProject", "Transpo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphicProject", "GraphicProject\GraphicProject.vcxproj", "{D308C885-83FA-4B22-95C6-A8D25E0375EC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileProject", "FileProject\FileProject.vcxproj", "{E876F0AE-A10F-4BEC-83BD-6F76225E12B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,16 @@ Global
 		{D308C885-83FA-4B22-95C6-A8D25E0375EC}.Release|x64.Build.0 = Release|x64
 		{D308C885-83FA-4B22-95C6-A8D25E0375EC}.Release|x86.ActiveCfg = Release|Win32
 		{D308C885-83FA-4B22-95C6-A8D25E0375EC}.Release|x86.Build.0 = Release|Win32
+		{E876F0AE-A10F-4BEC-83BD-6F76225E12B9}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{E876F0AE-A10F-4BEC-83BD-6F76225E12B9}.Debug|x64.ActiveCfg = Debug|x64
+		{E876F0AE-A10F-4BEC-83BD-6F76225E12B9}.Debug|x64.Build.0 = Debug|x64
+		{E876F0AE-A10F-4BEC-83BD-6F76225E12B9}.Debug|x86.ActiveCfg = Debug|Win32
+		{E876F0AE-A10F-4BEC-83BD-6F76225E12B9}.Debug|x86.Build.0 = Debug|Win32
+		{E876F0AE-A10F-4BEC-83BD-6F76225E12B9}.Release|Any CPU.ActiveCfg = Release|Win32
+		{E876F0AE-A10F-4BEC-83BD-6F76225E12B9}.Release|x64.ActiveCfg = Release|x64
+		{E876F0AE-A10F-4BEC-83BD-6F76225E12B9}.Release|x64.Build.0 = Release|x64
+		{E876F0AE-A10F-4BEC-83BD-6F76225E12B9}.Release|x86.ActiveCfg = Release|Win32
+		{E876F0AE-A10F-4BEC-83BD-6F76225E12B9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
